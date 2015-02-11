@@ -1,11 +1,13 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: Me
+permalink: /me/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+Hi,all.
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+I am Runrioter.I love programming. I want to tell you,
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+> Programming is to building as writing is to speaking.
+
+I think that you agree with me. : )

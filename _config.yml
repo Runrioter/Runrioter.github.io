@@ -3,7 +3,7 @@
 title: Runrioter's blog
 email: runrioter@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Runrioter's blog which is a journal about programming
+  Runrioter's blog is a journal about programming
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://runrioter.github.com" # the base hostname & protocol for your site
 #twitter_username: Runrioter
