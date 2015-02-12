@@ -10,17 +10,21 @@ meta: This is my first blog!
 
 值得一提的是除了纯粹的静态文件[Github][github]还支持[jekyll][jekyll],可是[jekyll][jekyll]是用[ruby][ruby]编写的。所以之后我有可能还会发一些ruby相关。
 
-遗憾的是，现在我还不会[ruby][ruby]，因此我要先贴一段[golang][golang]的代码。
+遗憾的是，现在我还不会[ruby][ruby]，但是我仍要先贴一段[ruby][ruby]的代码。
 
-{% highlight go %}
-package main
+{% highlight ruby %}
+class Runrioter
+	def initialize(name)
+		@name = name
+	end
 
-import "fmt"
+	def welcome
+		puts "Welcome to #{@name}'s blog!"
+	end
+end
 
-func main() {
-	fmt.Printf("Welcome to %s'blog!", "Runrioter")
-}
-
+me = Runrioter.new("Runrioter")
+me.welcome
 {% endhighlight %}
 
 OK!当我顺利看到这个页面的时候，证明blog已经部署成功了。
