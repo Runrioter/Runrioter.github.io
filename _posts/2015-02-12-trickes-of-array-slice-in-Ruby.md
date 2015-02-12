@@ -11,17 +11,17 @@ meta: Ruby array slice
 {% highlight ruby %}
 
 arr = [1, 3, 5, 7, 9]
-// normal
-arr[0] //1
-arr[3] //7
-arr[5] //nil
-arr[6] //nil
+# normal
+arr[0] #1
+arr[3] #7
+arr[5] #nil
+arr[6] #nil
 
-// trickes
-arr[5,0]//[]
-arr[5,100]//[]
-arr[6,0]//nil
-arr[6,100]//nil
+# trickes
+arr[5,0]#[]
+arr[5,100]#[]
+arr[6,0]#nil
+arr[6,100]#nil
 
 {% endhighlight %}
 
