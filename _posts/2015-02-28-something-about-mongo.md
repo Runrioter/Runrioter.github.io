@@ -3,7 +3,6 @@ layout: post
 title:  Something about Mongo
 date:   2015-02-28 13:24:04
 categories: blog mongodb
-author: Runrioter
 meta: mongodb
 ---
 

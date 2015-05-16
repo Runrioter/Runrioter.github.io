@@ -1,13 +1,42 @@
 # Site settings
 # can be referred by {{ site.description }}
 title: Runrioter's blog
+
 email: runrioter@gmail.com
+
 description: > # this means to ignore newlines until "baseurl:"
   Runrioter's blog is a journal about programming
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://runrioter.github.com" # the base hostname & protocol for your site
+
+url: "http://www.megorich.com" # the base hostname & protocol for your site
+
 #twitter_username: Runrioter
 github_username:  Runrioter
 
+timezone: Asia/Shanghai
+encoding: utf-8
+
+# publish posts in future date
+#future: true
+
+# produce an index for related posts
+#lsi: true
+
+# limit the number of posts to parse and publish
+#limit_posts: 100 
+
 # Build settings
 markdown: kramdown
+#highlighter: rouge
+excerpt_separator: "\n\n"
+
+
+# YAML Front Matter defaults
+defaults:
+  - 
+    scope:
+      path: "_posts" # an empty string here means all files in the project
+      #type: "posts"
+    values:
+      layout: "post"
+      author: "Runrioter Wung"

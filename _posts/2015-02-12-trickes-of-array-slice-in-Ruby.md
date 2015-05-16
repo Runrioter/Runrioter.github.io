@@ -8,7 +8,7 @@ meta: Ruby array slice
 ---
 在学习ruby的时候，发现ruby中对于array slice的处理和别的语言有些不同，有些诡异啊。
 
-{% highlight ruby %}
+{% highlight ruby  linenos %}
 
 arr = [1, 3, 5, 7, 9]
 # normal
