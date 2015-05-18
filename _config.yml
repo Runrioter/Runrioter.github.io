@@ -40,3 +40,9 @@ defaults:
     values:
       layout: "post"
       author: "Runrioter Wung"
+  - 
+    scope:
+      path: "_drafts"
+    values:
+      layout: "post"
+      author: "Swear Wang"
