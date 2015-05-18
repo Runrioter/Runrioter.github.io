@@ -1,3 +1,12 @@
+---
+layout: post
+title: Learning Rust
+date: 2015-05-18 16:30:00
+categories: blog rust
+author: Runrioter
+meta: rust-lang primitive
+---
+
 # Rust
 ---
 ## Primitive
