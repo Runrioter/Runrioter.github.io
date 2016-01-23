@@ -1,3 +1,24 @@
+# global configuration
+source: .
+exclude: [README.md, CNAME, Gemfile, Gemfile.lock]
+destination: ./_site
+plugins_dir: ./_plugins
+layouts_dir: ./_layouts
+data_dir: ./_data
+includes_dir: ./_includes
+collections: null
+timezone: Asia/Shanghai
+encoding: utf-8
+
+# publish posts in future date
+#future: true
+
+# produce an index for related posts
+#lsi: true
+
+# limit the number of posts to parse and publish
+#limit_posts: 100
+
 # Site settings
 # can be referred by {{ site.description }}
 title: Runrioter's blog
@@ -13,20 +34,24 @@ url: "http://www.megorich.com" # the base hostname & protocol for your site
 #twitter_username: Runrioter
 github_username:  Runrioter
 
-timezone: Asia/Shanghai
-encoding: utf-8
-
-# publish posts in future date
-#future: true
-
-# produce an index for related posts
-#lsi: true
-
-# limit the number of posts to parse and publish
-#limit_posts: 100 
-
 # Build settings
 markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids:       true
+  footnote_nr:    1
+  entity_output:  as_char
+  toc_levels:     1..6
+  smart_quotes:   lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+  coderay:
+    coderay_wrap:              div
+    coderay_line_numbers:      inline
+    coderay_line_number_start: 1
+    coderay_tab_width:         4
+    coderay_bold_every:        10
+    coderay_css:               style
 #highlighter: rouge
 excerpt_separator: "\n\n"
 
@@ -36,7 +61,7 @@ defaults:
   - 
     scope:
       path: "_posts" # an empty string here means all files in the project
-      #type: "posts"
+      type: "posts"
     values:
       layout: "post"
       author: "Runrioter Wung"
