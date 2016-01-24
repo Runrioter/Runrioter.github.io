@@ -6,9 +6,9 @@ plugins_dir: ./_plugins
 layouts_dir: ./_layouts
 data_dir: ./_data
 includes_dir: ./_includes
-collections: null
+#collections: null
 timezone: Asia/Shanghai
-encoding: utf-8
+encoding: "utf-8"
 
 # publish posts in future date
 #future: true
@@ -21,17 +21,17 @@ encoding: utf-8
 
 # Site settings
 # can be referred by {{ site.description }}
-title: Runrioter's blog
+title: Runrioter's Blog
 
 email: runrioter@gmail.com
-
-description: > # this means to ignore newlines until "baseurl:"
-  Runrioter's blog is a journal about programming
+# this means to ignore newlines until "baseurl:"
+description: >
+  A Journal About Programming.
 baseurl: "" # the subpath of your site, e.g. /blog/
 
 url: "http://www.megorich.com" # the base hostname & protocol for your site
 
-#twitter_username: Runrioter
+# twitter_username: Runrioter
 github_username:  Runrioter
 
 # Build settings
@@ -55,12 +55,11 @@ kramdown:
 #highlighter: rouge
 excerpt_separator: "\n\n"
 
-
 # YAML Front Matter defaults
 defaults:
   - 
     scope:
-      path: "_posts" # an empty string here means all files in the project
+      path: "" # an empty string here means all files in the project
       type: "posts"
     values:
       layout: "post"

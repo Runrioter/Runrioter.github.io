@@ -11,9 +11,9 @@
 }
 
 .site-title {
-    font-size: 26px;
+    font-size: 13px;
     line-height: 56px;
-    letter-spacing: -1px;
+    font-weight: bold;
     margin-bottom: 0;
     float: left;
 
@@ -34,6 +34,7 @@
     .page-link {
         color: $text-color;
         line-height: $base-line-height;
+        font-weight: bold;
 
         // Gaps between nav items, but not on the first one
         &:not(:first-child) {
@@ -94,6 +95,7 @@
 .site-footer {
     border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
+    font-weight: bold;
 }
 
 .footer-heading {
