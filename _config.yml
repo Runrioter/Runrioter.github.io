@@ -1,6 +1,6 @@
 # global configuration
 source: .
-exclude: [README.md, CNAME, Gemfile, Gemfile.lock]
+exclude: [README.md, CNAME, Gemfile, Gemfile.lock, vendor]
 destination: ./_site
 plugins_dir: ./_plugins
 layouts_dir: ./_layouts
@@ -36,6 +36,7 @@ github_username:  Runrioter
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
 kramdown:
   input: GFM
   auto_ids:       true
@@ -43,16 +44,17 @@ kramdown:
   entity_output:  as_char
   toc_levels:     1..6
   smart_quotes:   lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    # Rouge Options › https://github.com/jneen/rouge#full-options
+    css_class: 'highlight'
+    #line_numbers: true # bad idea, spans don't need linenos and would inherit this option
+    span:
+      line_numbers: false
+    block:
+      #line_numbers: true
+      #start_line: 1 
 
-  coderay:
-    coderay_wrap:              div
-    coderay_line_numbers:      inline
-    coderay_line_number_start: 1
-    coderay_tab_width:         4
-    coderay_bold_every:        10
-    coderay_css:               style
-#highlighter: rouge
 excerpt_separator: "\n\n"
 
 # YAML Front Matter defaults
