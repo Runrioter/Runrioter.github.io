@@ -2,7 +2,7 @@
 layout: post
 title:  "欢迎来到我的blog！"
 date:   2015-02-11 13:24:04
-categories: blog golang
+categories: blog
 author: Runrioter
 meta: This is my first blog!
 ---

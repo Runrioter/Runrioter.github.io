@@ -17,16 +17,17 @@ encoding: "utf-8"
 #lsi: true
 
 # limit the number of posts to parse and publish
-#limit_posts: 100
+limit_posts: 50
 
+show_drafts: true
 # Site settings
 # can be referred by {{ site.description }}
-title: Runrioter's Blog
+title: Runrioter's Journal
 
 email: runrioter@gmail.com
 # this means to ignore newlines until "baseurl:"
 description: >
-  A Journal About Programming.
+  Journals On Programming.
 baseurl: "" # the subpath of your site, e.g. /blog/
 
 url: "http://www.megorich.com" # the base hostname & protocol for your site

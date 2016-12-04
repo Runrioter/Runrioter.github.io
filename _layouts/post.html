@@ -1,15 +1,28 @@
----
-layout: default
----
-<div class="post">
-
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%Y-%m-%d" }}{% if page.author %} - 作者 {{ page.author }}{% endif %}{% if page.meta %} - {{ page.meta }}{% endif %}</p>
-  </header>
-
-  <article class="post-content">
-    {{ content }}
-  </article>
-
-</div>
+<!doctype html>
+<html lang="zh">
+  <head>
+    {% include minihead.html %}
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Runrioter's Journal</h1>
+        <p>Title: {{ page.title }}</p>
+        <p class="view"><a href="http://github.com/Runrioter">View the Project on GitHub <small>$ echo "Runrioter";</small></a></p>
+        <ul>
+          <li><a href="/">首页 <strong>Megorich</strong></a></li>
+          <li><a href="https://twitter.com/runrioter">关注 <strong>Twitter</strong></a></li>
+          <li><a href="http://github.com/Runrioter">关注 <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        {{ content }}
+      </section>
+      <footer>
+        <p>Maintained by <a href="http://github.com/Runrioter">Runrioter Wung</a></p>
+        <p><small>Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="{{ "/javascript/scale.fix.js" | prepend: site.baseurl}}"></script>
+  </body>
+</html>
