@@ -26,6 +26,6 @@ Runrioter's blog
 * ERROR: cannot discover where libxml2 is located on your system. please make sure `pkg-config` is installed.
 
   ```bash
-  # If libxml2` is installed by `brew
+  # If `libxml2` is installed by `brew`
   PKG_CONFIG_PATH=/usr/local/opt/libxml2/lib/pkgconfig bundle install
   ```

@@ -1,9 +1,6 @@
 ---
-layout: post
-title:  "欢迎来到我的blog！"
-date:   2015-02-11 13:24:04
-categories: blog
-author: Runrioter
+title: 欢迎来到我的blog！
+categories: programming hello
 meta: This is my first blog!
 ---
 今天开始使用[Github][github]来托管我的博客。嘿嘿！

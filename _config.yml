@@ -1,12 +1,12 @@
 # global configuration
 source: .
-exclude: [README.md, CNAME, Gemfile, Gemfile.lock, vendor]
+exclude: [README.md, CNAME, Gemfile, Gemfile.lock, vendor, Makefile]
 destination: ./_site
 plugins_dir: ./_plugins
 layouts_dir: ./_layouts
 data_dir: ./_data
 includes_dir: ./_includes
-#collections: null
+
 timezone: Asia/Shanghai
 encoding: "utf-8"
 
@@ -58,18 +58,20 @@ kramdown:
 
 excerpt_separator: "\n\n"
 
+collections:
+  authors:
+    output: true
+
 # YAML Front Matter defaults
 defaults:
-  - 
-    scope:
+  - scope:
       path: "" # an empty string here means all files in the project
       type: "posts"
     values:
       layout: "post"
       author: "Runrioter Wung"
-  - 
-    scope:
-      path: "_drafts"
+  - scope:
+      path: ""
+      type: "authors"
     values:
-      layout: "post"
-      author: "Swear Wang"
+      layout: "author"

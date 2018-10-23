@@ -1,6 +1,11 @@
+build:
+	@# Performs a one off build your site to ./_site (by default)
+	bundle exec jekyll build
+
 update:
 	@# To keep it up to date with the GitHub Pages gem
-	bundle update github-pages
+	@# Only github-pages update: bundle update github-pages
+	bundle update
 
 serve:
 	@# Builds your site any time a source file changes and serves it locally

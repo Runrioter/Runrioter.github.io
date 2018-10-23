@@ -1,8 +1,6 @@
 ---
-layout: post
 title:  Javascript中this详解
-categories: blog javascript
-author: Runrioter
+categories: programming javascript
 meta: Javascript中this详解
 ---
 
