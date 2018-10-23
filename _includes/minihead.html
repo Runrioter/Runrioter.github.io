@@ -1,9 +1,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="chrome=1">
-
-{% feed_meta %}
-{% seo %}
-
+<title>{{ page.title }}</title>	
+<meta name="description" content="{{ site.description }}">
 <link rel="stylesheet" href="{{ "/css/styles.css" | prepend: site.baseurl }}">
 <link rel="stylesheet" href="{{ "/css/pygment_trac.css" | prepend: site.baseurl }}">
 <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
