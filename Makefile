@@ -10,6 +10,10 @@ doctor:
 	@# Outputs any deprecation or configuration issues
 	bundle exec jekyll doctor
 
+check:
+	@# Health check
+	bundle exec github-pages health-check
+
 clean:
 	@# Removes the generated site and metadata file
 	bundle exec jekyll clean
