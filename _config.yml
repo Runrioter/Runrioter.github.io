@@ -1,6 +1,15 @@
 # global configuration
 source: .
-exclude: [README.md, CNAME, Gemfile, Gemfile.lock, vendor, node_modules, Makefile, package.json]
+exclude:
+  - README.md
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - node_modules
+  - Makefile
+  - package.json
+
 destination: ./_site
 plugins_dir: ./_plugins
 layouts_dir: ./_layouts
