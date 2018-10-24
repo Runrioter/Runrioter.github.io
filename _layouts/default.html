@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="zh">
-
-  {% include head.html %}
-
+  <head>
+    {% include head.html %}
+    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/assets/css/style.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/css/gh-theme.css" | prepend: site.baseurl }}">
+  </head>
   <body>
 
     {% include header.html %}

@@ -29,3 +29,8 @@ Runrioter's blog
   # If `libxml2` is installed by `brew`
   PKG_CONFIG_PATH=/usr/local/opt/libxml2/lib/pkgconfig bundle install
   ```
+
+* Page build failed
+
+  * Currently, `jekyll-sitemap` & `jekyll-seo-tag` is not supported
+  * [Official docs](https://help.github.com/articles/troubleshooting-github-pages-builds/)

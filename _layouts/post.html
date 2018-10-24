@@ -1,14 +1,16 @@
 <!doctype html>
 <html lang="zh">
   <head>
-    {% include minihead.html %}
+    {% include head.html %}
+    <link rel="stylesheet" href="{{ "/css/styles.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/css/gh-theme.css" | prepend: site.baseurl }}">
   </head>
   <body>
     <div class="wrapper">
       <header>
         <h1><a href="/">Runrioter's Journal</a></h1>
         <p>{{ page.title }}</p>
-        <p class="view">作者: <a href="http://github.com/Runrioter">{{ page.author }}</a></p>
+        <p class="view">作者: <a href="/authors/{{page.author}}.html">{{ page.author }}</a></p>
         <ul>
           <li><a href="/">首页 <strong>Megorich</strong></a></li>
           <li><a href="https://twitter.com/runrioter">关注 <strong>Twitter</strong></a></li>

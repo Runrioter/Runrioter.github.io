@@ -5,7 +5,8 @@ meta: This is my first blog!
 ---
 今天开始使用[Github][github]来托管我的博客。嘿嘿！
 
-值得一提的是除了纯粹的静态文件Github还支持[jekyll][jekyll],可是jekyll是用[ruby][ruby]编写的。
+值得一提的是，除了纯粹的静态文件Github还支持[jekyll][jekyll]。
+可是jekyll是用[ruby][ruby]编写的。
 所以之后我有可能还会发一些ruby相关。
 遗憾的是，现在我还不会ruby……
 

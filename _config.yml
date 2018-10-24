@@ -1,6 +1,6 @@
 # global configuration
 source: .
-exclude: [README.md, CNAME, Gemfile, Gemfile.lock, vendor, Makefile]
+exclude: [README.md, CNAME, Gemfile, Gemfile.lock, vendor, node_modules, Makefile, package.json]
 destination: ./_site
 plugins_dir: ./_plugins
 layouts_dir: ./_layouts
@@ -10,6 +10,8 @@ includes_dir: ./_includes
 timezone: Asia/Shanghai
 encoding: "utf-8"
 
+strict_front_matter: true
+
 # publish posts in future date
 #future: true
 
@@ -18,16 +20,17 @@ encoding: "utf-8"
 
 # limit the number of posts to parse and publish
 limit_posts: 50
+excerpt_separator: "\n\n"
 
 show_drafts: true
+
 # Site settings
-# can be referred by {{ site.description }}
+# For example: can be referred by {{ site.title }}
 title: Runrioter's Journal
 
 email: runrioter@gmail.com
 # this means to ignore newlines until "baseurl:"
-description: >
-  Journals On Programming.
+description: Journals On Programming.
 baseurl: "" # the subpath of your site, e.g. /blog/
 
 url: "http://www.megorich.com" # the base hostname & protocol for your site
@@ -39,26 +42,28 @@ github_username:  Runrioter
 markdown: kramdown
 highlighter: rouge
 kramdown:
+  auto_ids: true
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
   input: GFM
-  auto_ids:       true
-  footnote_nr:    1
-  entity_output:  as_char
-  toc_levels:     1..6
-  smart_quotes:   lsquo,rsquo,ldquo,rdquo
+  hard_wrap: false
+  footnote_nr: 1
+  show_warnings: true
   syntax_highlighter: rouge
   syntax_highlighter_opts:
     # Rouge Options › https://github.com/jneen/rouge#full-options
-    css_class: 'highlight'
-    #line_numbers: true # bad idea, spans don't need linenos and would inherit this option
+    # css_class: 'highlight'
+    # line_numbers: true # bad idea, spans don't need linenos and would inherit this option
     span:
       line_numbers: false
     block:
       #line_numbers: true
       #start_line: 1 
 
-excerpt_separator: "\n\n"
-
 collections:
+  posts:
+    output: true
   authors:
     output: true
 
@@ -69,7 +74,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      author: "Runrioter Wung"
+      author: "Runrioter"
   - scope:
       path: ""
       type: "authors"
