@@ -32,5 +32,4 @@ Runrioter's blog
 
 * Page build failed
 
-  * Currently, `jekyll-sitemap` & `jekyll-seo-tag` is not supported
   * [Official docs](https://help.github.com/articles/troubleshooting-github-pages-builds/)
