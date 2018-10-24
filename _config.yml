@@ -12,6 +12,10 @@ encoding: "utf-8"
 
 strict_front_matter: true
 
+sass:
+  sass_dir: _sass
+  style: compressed
+
 # publish posts in future date
 #future: true
 
