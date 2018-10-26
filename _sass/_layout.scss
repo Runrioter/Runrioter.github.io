@@ -55,9 +55,9 @@
             display: block;
             float: right;
             width: 36px;
-            height: 26px;
+            height: 20px;
             line-height: 0;
-            padding-top: 6px;
+            padding-top: 5px;
             text-align: center;
 
             > svg {
@@ -96,6 +96,11 @@
     border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
     font-weight: bold;
+
+    .rss-subscribe, .text {
+        font-size: 0.5em;
+        line-height: 2.5;
+    }
 }
 
 .footer-heading {
@@ -123,13 +128,13 @@
 }
 
 .footer-col-1 {
-    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-    width:         calc(35% - (#{$spacing-unit} / 2));
+    width: -webkit-calc(20% - (#{$spacing-unit} / 2));
+    width:         calc(20% - (#{$spacing-unit} / 2));
 }
 
 .footer-col-2 {
-    width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-    width:         calc(20% - (#{$spacing-unit} / 2));
+    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
+    width:         calc(35% - (#{$spacing-unit} / 2));
 }
 
 .footer-col-3 {
