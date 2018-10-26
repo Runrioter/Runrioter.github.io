@@ -6,9 +6,9 @@
       vps[0].content = "width=device-width, minimum-scale=0.25, maximum-scale=1.6";
     }, false);
   }
-  var contentHeight = document.body.scrollHeight;
+  var offsetHeight = document.body.offsetHeight;
   var windowHeight = window.innerHeight;
-  if (contentHeight < windowHeight) {
+  if (offsetHeight < windowHeight) {
     var siteFooters = document.getElementsByClassName('site-footer');
     if (siteFooters.length) {
       var sf = siteFooters[0];
