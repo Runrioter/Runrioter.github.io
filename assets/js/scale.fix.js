@@ -1,11 +1,4 @@
 (function() {
-  var vps = document.getElementsByName('viewport');
-  if (vps.length && navigator.userAgent.match(/iPhone/i)) {
-    vps[0].content = "width=device-width, minimum-scale=1.0, maximum-scale=1.0";
-    document.addEventListener("gesturestart", function() {
-      vps[0].content = "width=device-width, minimum-scale=0.25, maximum-scale=1.6";
-    }, false);
-  }
   var offsetHeight = document.body.offsetHeight;
   var windowHeight = window.innerHeight;
   if (offsetHeight < windowHeight) {
