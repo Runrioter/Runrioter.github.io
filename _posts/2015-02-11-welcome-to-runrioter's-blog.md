@@ -33,6 +33,6 @@ OK!
 
 希望我的热情不会随着时间的流逝而流失。
 
-[jekyll]: http://jekyllrb.com
+[jekyll]: https://jekyllrb.com
 [ruby]: https://www.ruby-lang.org
 [github]: https://github.com

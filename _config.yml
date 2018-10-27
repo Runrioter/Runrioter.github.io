@@ -46,7 +46,7 @@ email: runrioter@gmail.com
 description: Journals On Programming.
 baseurl: "" # the subpath of your site, e.g. /blog/
 
-url: "http://www.megorich.com" # the base hostname & protocol for your site
+url: "https://www.megorich.com" # the base hostname & protocol for your site
 
 # twitter_username: Runrioter
 github_username:  Runrioter
