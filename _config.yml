@@ -9,6 +9,7 @@ exclude:
   - node_modules
   - Makefile
   - package.json
+  - scripts
 
 destination: ./_site
 plugins_dir: ./_plugins

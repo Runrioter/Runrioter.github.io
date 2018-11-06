@@ -18,5 +18,9 @@
   "homepage": "https://github.com/Runrioter/Runrioter.github.io#readme",
   "devDependencies": {
     "highlight.js": "^9.13.1"
+  },
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "yargs": "^12.0.2"
   }
 }

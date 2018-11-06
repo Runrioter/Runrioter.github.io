@@ -9,6 +9,12 @@ Runrioter's blog
   make update
   ```
 
+* Make a post file quickly
+
+  ```bash
+  make post POST_TITLE="an awesome title"
+  ```
+
 ## Troubleshoot
 
 * GitHub Pages Dependency Versions
